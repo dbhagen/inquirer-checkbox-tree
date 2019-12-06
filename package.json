@@ -1,15 +1,18 @@
 {
-  "name": "inquirer-file-tree-selection-prompt",
+  "name": "inquirer-checkbox-tree-prompt",
   "version": "1.0.3",
-  "repository": "https://github.com/anc95/inquirer-file-tree-selection",
-  "description": "inquerer file tree selection prompt",
+  "repository": "https://github.com/dbhagen/inquirer-checkbox-tree-prompt",
+  "description": "Inqueirer checkbox tree prompt",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "inquerer",
-    "filetree"
+    "inquirer",
+    "checkbox",
+    "tree",
+    "graph",
+    "treegraph"
   ],
   "author": "anc95",
   "license": "ISC",

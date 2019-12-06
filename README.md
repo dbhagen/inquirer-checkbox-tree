@@ -1,40 +1,37 @@
-## Inquirer File Tree Selection Prompt
+## Inquirer Checkbox Tree Prompt
 
 ### QuickDemo
 ![QuickDemo](./example/screenshot.gif)
 
 ### Install
 ```
-npm install inquirer-file-tree-selection-prompt
+npm install inquirer-checkbox-tree-prompt
 ```
 
 ### Usage
 ```
-inquirer.registerPrompt('file-tree-selection', inquirerFileTreeSelection)
+inquirer.registerPrompt('checkbox-tree', inquirerCheckboxTree)
 
 inquirer.prompt({
-  type: 'file-tree-selection',
+  type: 'checkbox-tree',
   ...
 })
 ```
 
 ### Options
-Takes type, name, message[filter, validate, default, pageSize, onlyShowDir, root] properties.
-The extra options that this plugin provides are:
-- `onlyShowDir`:  (Boolean) if true, will only show directory. Default: false.
-- `root`: (String) it is the root of file tree. Default: process.cwd().
+Takes type, name, message[filter, validate, default, pageSize] properties.
 
 ### Example
 ```
 const inquirer = require('inquirer')
-const inquirerFileTreeSelection = require('inquirer-file-tree-selection-prompt')
+const inquirerCheckboxTree = require('inquirer-checkbox-tree-prompt')
 
-inquirer.registerPrompt('file-tree-selection', inquirerFileTreeSelection)
+inquirer.registerPrompt('checkbox-tree', inquirerCheckboxTree)
 
 inquirer
   .prompt([
     {
-      type: 'file-tree-selection',
+      type: 'checkbox-tree',
       name: 'file'
     }
   ])
